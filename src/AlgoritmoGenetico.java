@@ -23,10 +23,6 @@ public class AlgoritmoGenetico {
         return random.nextInt(2); // el limite maximo es 2 ya que en la funcion random 2 el limite es exclusivo
     }
 
-    public void imprimirCadenaPrincipal(){
-        System.out.println(this.principal);
-    }
-
     public void procesar() {
         if(this.principal == null) this.principal = this.generarCadena();
         System.out.println("Empezando proceso con la cadena\n\t" + this.principal);
